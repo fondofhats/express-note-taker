@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const fs = require('fs');
+const uuidv1 = require('uuidv1');
 
 /* GET */
 router.get('/notes', (req, res) => {
   fs.readFile('./db/db.json', 'utf8', function(err, contents) {
     var words = JSON.parse(contents);
-    console.log(words);
     res.send(words);
   });
 });
@@ -21,21 +21,47 @@ router.post('/notes', (req, res) => {
       let note = {
         title: req.body.title,
         text: req.body.text,
-        id: req.body.id
+        id: uuidv1()
       };
-      console.log(notes.length);
       console.log(note);
       res.json(note);
       // Add data to existing json array
-      /* json.push(note); */
+      notes.push(note);
+      console.log(notes);
   
       // Write updated json to array 
-      /* fs.writeFile('db/db.json', JSON.stringify(json, null, 2), (err) => {
+      fs.writeFile('db/db.json', JSON.stringify(notes, null, 2), (err) => {
+        // Check for error
+        if (err) throw err;
+        console.log("OK");
+      });
+    });
+  });
+
+  /* DELETE REQUEST */
+router.delete('/notes/:id', (req, res) => {
+    fs.readFile('db/db.json',(err, data) => {
+      // Check for error
+      if (err) throw err;
+      let deleteId = req.params.id;
+      console.log(deleteId);
+      // Handle data gathering for json update
+      let notes = JSON.parse(data);
+      notes.forEach((item, i) => {
+        if (item.id.trim() === deleteId.trim()){ 
+            console.log(item);
+          notes.splice(i, 1);       
+        }
+      });
+  
+      // Write updated json to array 
+      fs.writeFile('db/db.json', JSON.stringify(notes, null, 2), (err) => {
         // Check for error
         if (err) throw err;
         res.send('200');
-      }); */
+      });
     });
+  
   });
 
 module.exports  = router;
