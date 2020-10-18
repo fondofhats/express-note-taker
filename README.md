@@ -52,9 +52,9 @@ Open a browser and navigate to [Heruko Express Note Taker](https://fondofhats-ex
 <br />
 
 ## Screenshot
-![Note Taker](https://raw.githubusercontent.com/fondofhats/express-note-taker/master/express-note-taker1.png)
+![Note Taker](https://raw.githubusercontent.com/fondofhats/express-note-taker/main/express-note-taker1.png)
 
-![Note Taker](https://raw.githubusercontent.com/fondofhats/express-note-taker/master/express-note-taker2.png)
+![Note Taker](https://raw.githubusercontent.com/fondofhats/express-note-taker/main/express-note-taker2.png)
 
 <br />
 
