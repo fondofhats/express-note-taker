@@ -4,13 +4,13 @@
     "text": "Test text"
   },
   {
-    "title": "TEST!2",
-    "text": "TEXT TEST !",
-    "id": "23c4e780-1143-11eb-8d68-4fad523e7432"
+    "title": "Test Note1",
+    "text": "this is a test note 1",
+    "id": "99b05600-1148-11eb-8e6e-fe730a77defb"
   },
   {
-    "title": "TEST!3",
-    "text": "TEXT TEST !",
-    "id": "295a8010-1143-11eb-803d-90d16241f087"
+    "title": "Test Note2",
+    "text": "Test note 2",
+    "id": "b1567ee0-114a-11eb-8148-e0a9780a0973"
   }
 ]
