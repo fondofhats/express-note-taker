@@ -4,13 +4,8 @@
     "text": "Test text"
   },
   {
-    "title": "Test Note1",
-    "text": "this is a test note 1",
-    "id": "99b05600-1148-11eb-8e6e-fe730a77defb"
-  },
-  {
-    "title": "Test Note2",
-    "text": "Test note 2",
-    "id": "b1567ee0-114a-11eb-8148-e0a9780a0973"
+    "title": "Test Note 1",
+    "text": "This is test note # 1",
+    "id": "5597a3c0-114c-11eb-81bc-395083e578c0"
   }
 ]
