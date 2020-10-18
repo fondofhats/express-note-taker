@@ -105,9 +105,6 @@ SOFTWARE.
 <br />
 
   ## Questions
-<br />
-
-  
-  <br/>Email Michael Giddings with any support questions at <a href="mailto:mikegiddings@gmail.com">mikegiddings@gmail.com</a><br>
+  Email Michael Giddings with any support questions at <a href="mailto:mikegiddings@gmail.com">mikegiddings@gmail.com</a><br>
   or visit my <a href="https://github.com/fondofhats">GitHub Homepage</a>.
   
